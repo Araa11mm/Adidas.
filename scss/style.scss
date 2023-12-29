@@ -1,0 +1,434 @@
+@import "./header";
+@import "./main1";
+@import "./main2";
+@import "./main3";
+@import "./main4";
+@import "./main5";
+@import "./footer";
+@import "./mediaHeader";
+@import "./mediaMain1";
+@import "./mediaMain2";
+@import "./mediaMain3";
+@import "./mediaMain4";
+@import "./mediaMain5";
+@import "./null";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+// @media (max-width: 990px) {
+
+    
+
+//     .btnTop1 {
+//         margin-top: 13px;
+//     }
+
+//     .btnTop2 {
+//         margin-top: 13px;
+//     }
+
+//     .btnTop3 {
+//         margin-top: 13px;
+//     }
+
+//     .btnTop4 {
+//         margin-top: 10px;
+//     }   
+// }
+
+
+
+
+
+@media (max-width: 950px) {
+
+    // FOOTER
+    .footer {
+        height: 500px;
+    }
+
+    .item__four {
+        display: none;
+        
+    }
+
+    .item__one_mobile {
+        display: block;
+    }
+
+    .footer__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer__flex {
+        padding-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 0.6fr;
+    }
+
+    .location__flex {
+        align-items: center;
+        padding-top: 44px;
+    }
+
+    .foot__item {
+        flex-wrap: wrap;
+        justify-content: end;
+        padding-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 730px) {
+
+    // FOOTER
+    .footer {
+        height: 100%;
+    }
+    .item__two {
+        display: none;
+    }
+
+    .item__free {
+        display: none;
+    }
+
+    .item__one_mobile {
+        display: none;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+        transform: none;
+        padding-top: 10%;
+        margin-bottom: 0%;
+    }
+
+    .social__flex {
+        display: none;
+    }
+
+    .accordion {
+        display: block;
+    }
+
+    .contentBx__item {
+        font-family: "URW DIN";
+        color: #ffffff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    
+
+    .content__a   {
+        font-family: "URW DIN";
+        color: #b6b6b6;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        a {
+            color: #b6b6b6;
+        }
+
+        &:hover {
+            color: #ffffff;
+        }
+    }
+
+    .content__p {
+        padding-bottom: 15px;
+    }
+
+    .location__flex {
+        padding-top: 0px;
+        display: block;
+    }
+
+    .footer__flex {
+        padding-top: 19px;
+        grid: none;
+    }
+
+    .location__flex_copyrights {
+        font-weight: 400;
+        padding-top: 9px;
+    }
+
+    .foot__item {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .foot__item_stil {
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @font-face {
+//     font-family: 'PFDinMono-XThin';
+//     src: url('PFDinMono-XThin.eot');
+//     src: local('☞PFDinMono-XThin'), local('PFDinMono-XThin'),
+//         url('PFDinMono-XThin.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-XThin.woff2') format('woff2'),
+//         url('PFDinMono-XThin.woff') format('woff'),
+//         url('PFDinMono-XThin.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-ThinItalic.eot');
+//     src: local('☞PFDinMono-ThinItalic'), local('PFDinMono-ThinItalic'),
+//         url('PFDinMono-ThinItalic.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-ThinItalic.woff2') format('woff2'),
+//         url('PFDinMono-ThinItalic.woff') format('woff'),
+//         url('PFDinMono-ThinItalic.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Italic.eot');
+//     src: local('☞PFDinMono-Italic'), local('PFDinMono-Italic'),
+//         url('PFDinMono-Italic.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Italic.woff2') format('woff2'),
+//         url('PFDinMono-Italic.woff') format('woff'),
+//         url('PFDinMono-Italic.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Regular.eot');
+//     src: local('☞PFDinMono-Regular'), local('PFDinMono-Regular'),
+//         url('PFDinMono-Regular.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Regular.woff2') format('woff2'),
+//         url('PFDinMono-Regular.woff') format('woff'),
+//         url('PFDinMono-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+// @font-face {
+//     font-family: 'PFDinMono-XThinItalic';
+//     src: url('PFDinMono-XThinItalic.eot');
+//     src: local('☞PFDinMono-XThinItalic'), local('PFDinMono-XThinItalic'),
+//         url('PFDinMono-XThinItalic.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-XThinItalic.woff2') format('woff2'),
+//         url('PFDinMono-XThinItalic.woff') format('woff'),
+//         url('PFDinMono-XThinItalic.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Bold.eot');
+//     src: local('☞PFDinMono-Bold'), local('PFDinMono-Bold'),
+//         url('PFDinMono-Bold.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Bold.woff2') format('woff2'),
+//         url('PFDinMono-Bold.woff') format('woff'),
+//         url('PFDinMono-Bold.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-BoldItalic.eot');
+//     src: local('☞PFDinMono-BoldItalic'), local('PFDinMono-BoldItalic'),
+//         url('PFDinMono-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-BoldItalic.woff2') format('woff2'),
+//         url('PFDinMono-BoldItalic.woff') format('woff'),
+//         url('PFDinMono-BoldItalic.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Medium.eot');
+//     src: local('☞PFDinMono-Medium'), local('PFDinMono-Medium'),
+//         url('PFDinMono-Medium.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Medium.woff2') format('woff2'),
+//         url('PFDinMono-Medium.woff') format('woff'),
+//         url('PFDinMono-Medium.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Light.eot');
+//     src: local('☞PFDinMono-Light'), local('PFDinMono-Light'),
+//         url('PFDinMono-Light.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Light.woff2') format('woff2'),
+//         url('PFDinMono-Light.woff') format('woff'),
+//         url('PFDinMono-Light.ttf') format('truetype');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-MediumItalic.eot');
+//     src: local('☞PFDinMono-MediumItalic'), local('PFDinMono-MediumItalic'),
+//         url('PFDinMono-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-MediumItalic.woff2') format('woff2'),
+//         url('PFDinMono-MediumItalic.woff') format('woff'),
+//         url('PFDinMono-MediumItalic.ttf') format('truetype');
+//     font-weight: 500;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: 'PFDinMono';
+//     src: url('PFDinMono-Thin.eot');
+//     src: local('☞PFDinMono-Thin'), local('PFDinMono-Thin'),
+//         url('PFDinMono-Thin.eot?#iefix') format('embedded-opentype'),
+//         url('PFDinMono-Thin.woff2') format('woff2'),
+//         url('PFDinMono-Thin.woff') format('woff'),
+//         url('PFDinMono-Thin.ttf') format('truetype');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+
+
+
+// @font-face {font-family: "RestoreW00-Bold";
+//      src: url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.eot"); 
+//      src: url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.eot?#iefix") format("embedded-opentype"), 
+//      url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.woff2") format("woff2"), 
+//      url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.woff") format("woff"), 
+//      url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.ttf") format("truetype"), 
+//      url("//db.onlinewebfonts.com/t/085720e7cc5cbefe464d010b4d52417e.svg#RestoreW00-Bold") format("svg");
+//     font-weight: 300; }
+
+//     @font-face {
+//         font-family: 'URW DIN';
+//         src: local('URW DIN Semi Condensed Extra Light Italic'), local('URW-DIN-Semi-Condensed-Extra-Light-Italic'),
+//             url('URWDINSemiCond-XLightItalic.woff2') format('woff2'),
+//             url('URWDINSemiCond-XLightItalic.woff') format('woff'),
+//             url('URWDINSemiCond-XLightItalic.ttf') format('truetype');
+//         font-weight: 200;
+        
+//       }
+
+//     //   @font-face {
+//     //     font-family: 'URW DIN';
+//     //     src: local('URW DIN Condensed Regular'), local('URW-DIN-Condensed-Regular'),
+//     //         url('URWDINCond-Regular.woff2') format('woff2'),
+//     //         url('URWDINCond-Regular.woff') format('woff'),
+//     //         url('URWDINCond-Regular.ttf') format('truetype');
+//     //     font-weight: 400;
+//     //     font-style: normal;
+//     //   }
+
+//       @font-face {
+//         font-family: 'Gobold-Bold';
+//         src:url('Gobold-Bold.ttf.woff') format('woff'),
+//             url('Gobold-Bold.ttf.svg#Gobold-Bold') format('svg'),
+//             url('Gobold-Bold.ttf.eot'),
+//             url('Gobold-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+//             font-weight: normal;
+//             font-style: normal;
+            
+//     }

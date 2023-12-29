@@ -1,0 +1,192 @@
+
+.section__picture {
+    width: 100%;
+    height: 622px; 
+    background-image: url(../img/Picture.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    margin-top: 1%;
+}
+
+.section {
+
+    &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    }
+}
+
+.section {
+
+    &__picture {
+        width: 100%;
+        height: 622px; 
+        background-image: url(../img/Picture.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top; 
+        margin-top: 1%;
+    }
+
+
+    &__container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+        
+    }
+
+
+    &__description {
+    
+        &_h2 {
+            font-family: "Integral CF";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 43px;
+            line-height: 52px;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+            padding-top: 17%;
+        }
+
+        &_p {
+            font-family: 'PFDinMono';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 26px;
+            letter-spacing: -0.025em;
+            color: #FFFFFF;
+            padding-top: 1%;
+            padding-bottom: 2%;
+        }
+
+        &_button {
+            width: 155px;
+            height: 43px;
+            background: #FFFFFF;
+            // padding: 15px 11px; 
+            padding: 11px 11px 7px;
+
+            &:hover {
+                .right__arrow {
+                    &::before,
+                    &::after {
+                        border-color: gray;
+                    }
+
+                    &::before {
+                        background-color: gray;
+                    }
+                }
+            }
+            
+        }
+
+        
+
+        &_button:hover &_p2 {
+            color: gray; 
+        }
+
+        &_p2 {
+            font-family: 'PFDinMono';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.105em;
+            color: #000000;  
+            padding-right: 19px; 
+        }
+
+    }
+}
+
+.button {
+
+    &__description {
+
+        &_flex {
+            display: flex;
+            text-align: center; 
+        } 
+    }
+}
+
+.right {
+
+    &__arrow {
+        display: inline-flex;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        transition: transform .2s;
+
+        &::before,
+        &::after {
+        display: inline-flex;
+        position: absolute;
+        content: '';
+        
+    }
+
+        &::before {
+        top: 8px;
+        left: 0;
+        width: 20px;
+        height: 12%;
+        background-color: rgb(0, 0, 0);
+    }
+    }
+
+    &__button:hover &__arrow::before {
+        background-color: gray;
+        
+    } 
+
+    &__arrow::after {
+        right: 0;
+        border-top: 3px solid rgb(0, 0, 0);
+        border-right: 3px solid rgb(0, 0, 0);
+        transform: rotate(45deg);
+    }
+
+    &__arrow::after {
+        width: 10px;
+        height: 10px;
+        top: 4px;
+        transform: rotate(45deg);
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

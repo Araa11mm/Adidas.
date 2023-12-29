@@ -1,0 +1,322 @@
+.section {
+}
+.photo {
+
+		&__flex {
+            display: flex;
+            gap: 0.6rem;
+            padding-top: 0.6rem;
+            padding-bottom: 0.6rem;
+		}
+
+		&__man {
+            position: relative;
+            width: 100%;
+            height: 622px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../img/MAN.jpg); 
+            cursor: pointer;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                }
+
+            &:hover::after {
+                opacity: 1;
+            }
+
+            &:hover {
+                .man__p {
+                    color: white;
+                    opacity: 1;
+                    z-index: 232;
+                }
+                
+            }
+		}
+
+
+		&__woman {
+            position: relative;
+            width: 100%;
+            height: 622px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../img/WOMAN.jpg);
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                }
+
+            &:hover::after {
+                opacity: 1;
+            }
+
+            &:hover {
+                .woman__p {
+                    color: white;
+                    opacity: 1;
+                    z-index: 232;
+                }
+                
+            }
+		}
+
+		&__kids {
+            overflow-x: hidden;
+            position: relative;
+            width: 100%;
+            height: 622px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(../img/KIDS.jpg);
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                }
+
+            &:hover::after {
+                opacity: 1;
+            }
+
+            &:hover {
+                .kids__p {
+                    color: white;
+                    opacity: 1;
+                    z-index: 1;
+                }
+                
+            }
+		}
+}
+
+.man {
+
+		&__p {
+        position: relative; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); /* Центрируем текст */
+        color: white;
+        font-size: 46px;
+        font-family: 'PFDinMono';
+        letter-spacing: 4.83px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0; /* Устанавливаем начальную прозрачность */
+        transition: opacity 0.1s ease; /* Добавляем плавный переход прозрачности */
+        font-size: 46px;
+        font-family: 'PFDinMono';
+        letter-spacing: 4.83px;
+        font-weight: 500;
+		}
+
+        &__p a {
+            color: white;
+        }
+}
+
+.woman {
+
+		&__p {
+            position: relative; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            color: white;
+            font-size: 46px;
+            font-family: 'PFDinMono';
+            letter-spacing: 4.83px;
+            font-weight: 500;
+            text-align: center;
+            opacity: 0; 
+            transition: opacity 0.1s ease; 
+            font-size: 46px;
+            font-family: 'PFDinMono';
+            letter-spacing: 4.83px;
+            font-weight: 500;
+		}
+
+        &__p a {
+            color: white;
+        }
+}
+.kids {
+
+		&__p {
+            position: relative; 
+            top: 50%; 
+            left: 54%; 
+            transform: translate(-50%, -50%); 
+            color: white;
+            font-size: 46px;
+            font-family: 'PFDinMono';
+            letter-spacing: 4.83px;
+            font-weight: 500;
+            text-align: center;
+            opacity: 0; 
+            transition: opacity 0.1s ease; 
+            font-size: 46px;
+            font-family: 'PFDinMono';
+            letter-spacing: 4.83px;
+            font-weight: 500;
+		}
+
+        &__p a {
+            color: white;
+        }       
+}
+
+
+.photo {
+
+
+    &__flex2 {
+        display: flex;
+        gap: 0.6em;
+    }
+
+
+    &__classic {
+        position: relative;
+        background-size: cover;
+        background-image: url(../img/classic.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 568px;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        
+
+        &_p {
+            font-family: 'PFDinMono';
+            font-weight: 600;
+            font-size: 35px;
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 4.83px;
+            padding-top: 34%;
+            padding-bottom: 2%;
+        }
+
+
+        &_button {
+            width: 137px;
+            height: 43px;
+            background-color: #FFF;
+            color: #000000;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        
+            &:hover {
+                background-color: #000;
+                color: #ffffff;
+            }   
+        }
+        
+        &_p2 {
+            color: #000000;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'URW DIN';
+            font-weight: 400;
+            padding: 12px 0px;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+            }   
+        }
+    }
+
+
+    &__stand {
+        position: relative;
+        background-size: cover;
+        background-image: url(../img/stand.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        height: 568px;
+
+        
+
+        &_p {
+            font-family: 'PFDinMono';
+            font-weight: 600;
+            font-size: 35px;
+            color: #FFF;
+            font-weight: 600;
+            letter-spacing: 4.83px;
+            padding-top: 34%;
+            padding-bottom: 2%;
+        }
+
+
+        &_button {
+            width: 137px;
+            height: 43px;
+            background-color: #FFF;
+            color: #000000;
+            transition: background-color 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                background-color: #000;
+                color: #ffffff;
+            }  
+        }
+
+
+        &_p2 {
+            color: #000000;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'URW DIN';
+            font-weight: 400;
+            padding: 12px 0px;
+
+            &:hover {
+                color: rgb(255, 255, 255);
+            }   
+        }
+    }
+}
+
+
+
+
+  
+
+
+
+
+

@@ -1,0 +1,341 @@
+.footer {
+
+background: #111111;
+height: 430px;
+
+    &__container {
+        max-width: 1390px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    transform: translateY(30%);
+    margin-bottom: 9%;
+    
+    }
+
+}
+
+.item {
+    
+    &__one {
+
+        &_stil  {
+            font-family: 'URW DIN';
+            color: #ffffff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 20px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        &_mobile {
+            display: none;
+            font-family: 'URW DIN';
+            color: #ffffff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 20px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+    
+
+    &__two {
+
+        &_li  {
+            font-family: 'URW DIN';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 20px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        
+        &_stil  {
+            font-family: 'URW DIN';
+            color: #b6b6b6;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 15px;
+            transition: color .2s;
+
+            a {
+                color: #b6b6b6; 
+
+                &:hover {
+                    color: #ffffff; 
+                }
+            }
+        }
+    }
+
+
+    &__free {
+
+        
+        
+        &_li {
+            font-family: 'URW DIN';
+            color: #ffffff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 20px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+        &_stil {
+            font-family: 'URW DIN';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 15px;
+
+            a {
+                color: #b6b6b6;
+
+                &:hover {
+                    color: #ffffff; 
+                }
+            }
+        }
+    }
+
+
+    &__four {
+
+        
+        &_li {
+            font-family: 'URW DIN';
+            color: #ffffff;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-bottom: 20px;
+
+            a {
+                color: #ffffff;
+            }
+        }
+
+
+        &_stil {
+            font-family: 'URW DIN';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            margin-bottom: 15px;
+
+            a {
+                color: #b6b6b6;
+        
+                
+                &:hover {
+                    color: #ffffff; 
+                }
+            }
+        }
+    }
+}
+
+
+.social {
+
+    &__a {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__flex {
+        display: flex;
+        column-gap: 15px;
+        justify-content: end;
+        
+        &_button {
+            width: 34px;
+            height: 34px;
+            border-radius: 20px;
+            background-color: #7E7E7E;
+            transition: background-color .1s ;
+
+        &:hover {
+            background-color: #ffffff;
+        }
+        }
+
+        &_img {
+            padding-top: 1px;
+        }
+    }
+}
+
+
+.footer {
+
+    &__flex {
+    display: flex;
+    justify-content: space-between;
+    }
+
+}
+
+
+.location {
+
+    &__flex {
+    display: flex;
+    column-gap: 15px;
+        
+        &_a {
+            display: flex;
+            column-gap: 15px;
+        }
+
+        &_p {
+            font-family: 'URW DIN';
+            color: #ffffff;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &_copyrights {
+            font-family: 'URW DIN';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: #b6b6b6;
+        }
+
+    }
+}
+
+
+.foot {
+
+    &__item {
+        display: flex;
+        column-gap: 15px;
+
+        &_stil  {
+            font-family: 'URW DIN';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            color: #b6b6b6;
+
+            a {
+                color: #b6b6b6;
+
+                &:hover {
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+
+// stil accordion
+
+.accordion {
+    display: none;
+    max-width: 1000px;
+
+    .contentBx {
+        position: relative;
+        margin: 10px 0;
+
+        .label {
+            position: relative;
+            padding: 10px 0;
+            background: #111111;
+            color: floralwhite;
+            cursor: pointer;
+
+            &::before {
+                content: "+";
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                transform: translateY(-50%);
+                font-size: 1.6em;
+            }
+        }
+
+        &.active {
+            .label::before {
+            content: "-";
+        }
+
+        .content {
+            height: 150px;
+            overflow-y: auto;
+        }
+    }
+
+        .content {
+            position: relative;
+            background: #111111;
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s;
+            overflow-y: auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

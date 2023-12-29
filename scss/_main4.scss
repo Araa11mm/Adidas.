@@ -1,0 +1,139 @@
+
+.flex {
+		&__adi {
+        display: flex;
+        padding-top: 5%;
+        column-gap: 0.6em;
+        padding-bottom: 3%;
+		}
+}
+
+
+.adi1  { 
+    background-image: url(../img/adi1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    width: 100%;
+    height: 331px;
+
+
+		&__img {
+            padding-left: 4%;
+            padding-top: 7%;
+		}
+
+
+		&__p {
+            color: #FFF;
+            font-family: 'URW DIN';
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding-left: 4%;
+            padding-top: 8%;
+		}
+
+
+		&__button {
+            width: 124px;
+            height: 47px;
+            background-color: #FFF;
+            color: #000;
+            margin-left: 4%;
+            margin-top: 5%;
+            transition: background-color 0.2s ease, color 0.2s ease;
+
+            &:hover {
+                background-color: #000;
+                color: #FFF;
+            }
+
+            
+			&_p {
+                color: #000;
+                font-family: 'URW DIN';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                text-align: center;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: #FFF;
+                } 
+			}
+		}
+}
+
+
+.adi2 {
+
+    background-image: url(../img/adi2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; 
+    width: 100%;
+    height: 331px;
+
+    &__img {
+        padding-left: 4%;
+        padding-top: 7%;
+    }
+
+
+    &__p {
+        color: #FFF;
+        font-family: 'URW DIN';
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-left: 4%;
+        padding-top: 8%;
+    }
+
+
+    &__button {
+        width: 192px;
+        height: 47px;
+        background-color: #FFF;
+        color: #000;
+        margin-left: 4%;
+        margin-top: 5%;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            background-color: #000;
+            color: #FFF;
+        }
+
+        
+        &_p {
+            color: #000;
+            font-family: 'URW DIN';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #FFF;
+            } 
+        }
+    }
+}
+
+
+
+
+
+

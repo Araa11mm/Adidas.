@@ -1,0 +1,140 @@
+.inner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 7%;
+    }
+
+    .gallery {
+        display: flex;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    
+    .foto-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+.photo1 {
+background-image: url(../img/photo1.jpg);
+width: 100%;
+height: 376px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.photo2 {
+    background-image: url(../img/photo2.jpg);
+    width: 100%;
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.photo3 {
+    background-image: url(../img/photo3.jpg);
+    width: 100%;
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+.photo4 {
+    background-image: url(../img/photo4.jpg);
+    width: 100%;
+    height: 376px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    }
+
+
+
+.card {
+
+    &__flex {
+    display: flex;
+    gap: 40px;
+    margin-top: 8%;
+    }
+
+    &__h2  {
+        color: #000;
+        font-size: 15px;
+        font-family: URW DIN;
+        font-weight: 700;
+        padding-top: 12px;
+        padding-bottom: 13px;
+        width: 100%;
+        
+        a {
+        color: #000;
+        font-size: 15px;
+        font-family: 'URW DIN';
+        font-weight: 700;
+        }
+    }
+
+
+    &__p  {
+        color: #646464;
+        font-size: 11px;
+        font-family: 'URW DIN';
+        font-weight: 300;
+        padding-bottom: 10px;
+        
+        a {
+            color: #646464;
+        }
+    }
+
+
+    &__button {
+    width: 67px;
+    height: 20px;
+    background-color: #ffffff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+        background-color: #000000;
+    }
+
+        &_p {
+            color: #000;
+            font-size: 15px;
+            font-family: 'PFDinMono';
+            font-weight: 500;
+
+            &:hover {
+            color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
